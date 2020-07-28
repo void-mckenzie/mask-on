@@ -47,7 +47,6 @@ val_datagen = ImageDataGenerator(
 test_datagen = ImageDataGenerator(
         rescale=1./255,
         horizontal_flip=False)
-
 training_set = train_datagen.flow_from_directory(
         'actual_data/train',
         target_size=(160, 160),
